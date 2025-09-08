@@ -15,8 +15,90 @@
     <!-- link stylesheet -->
     <link rel="stylesheet" href="./style.css/style.css">
 </head>
-<body>
+<body class="bg-[#F0FDF4]">
     
+    <header class="bg-[#15803D]">
+        
+        <!-- navbar -->
+        <nav>
+            <div class="navbar w-11/12 mx-auto  shadow-sm text-white">
+                <div class="navbar-start">
+                    <div class="dropdown ">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /> </svg>
+                        </div>
+                        <ul
+                            tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow text-black">
+                            <li><a>About</a></li>
+                            <li><a>Gallery</a></li>
+                            <li><a>Plant a Tree</a></li>
+                        </ul>
+                    </div>
+                    <a class="pl-6 text-xl">Green Earth</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>About</a></li>
+                        <li><a>Gallery</a></li>
+                        <li><a>Plant a Tree</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end pr-6">
+                    <a class="btn border-none bg-[#FACC15] rounded-4xl text-[#15803D] ">Plant a Tree</a>
+                </div>
+            </div>
+        </nav>
+
+        <!-- header section banner -->
+         <section class="bg-[#CFF0DC] flex justify-around items-center">
+            <div>
+                <img src="./assets/hero-leaf1.png" alt="">
+            </div>
+            <div class="text-center space-y-4">
+                <h1 class="text-3xl font-bold">Plant a Tree, Grow a Future</h1>
+                <p class="text-sm">Join our mission to plant 1 million trees and make the Earth greener for future generations.</p>
+                <button class="btn bg-[#FACC15] text-[#15803D] rounded-4xl">Get Involved</button>
+            </div>
+            <div>
+                <img src="./assets/hero-leaf2.png" alt="">
+            </div>
+         </section>
+     </header>
+
+
+
+    <!-- Our Impact Section -->
+    <section class="mx-auto text-center bg-[#CFF0DC]">
+        <div class="w-11/12 mx-auto py-10">
+            <h1 class="text-2xl font-semibold mb-4">Our Impact</h1>
+            <div class="grid grid-cols-3 gap-6">
+                <div class="bg-white py-5 rounded-2xl">
+                    <h2 class="text-2xl font-bold text-[#15803D] mb-2">500K+</h2>
+                    <p>Trees Planted</p>
+                </div>
+                <div class="bg-white py-5 rounded-2xl">
+                    <h2 class="text-2xl font-bold text-[#15803D] mb-2">120K+</h2>
+                    <p>Communities Involved</p>
+                </div>
+                <div class="bg-white py-5 rounded-2xl">
+                    <h2 class="text-2xl font-bold text-[#15803D] mb-2">30K+</h2>
+                    <p>Countries Reached</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plant a Tree Today section -->
+    <section class="bg-[#166534]">
+        <div>
+            <h1>Plant a Tree Today</h1>
+            <div>
+                <input type="text" placeholder="Youn Name" class="input input-ghost bg-white" />
+                <input type="email" placeholder="Your Email Address" class="input input-ghost bg-white" />
+            </div>
+        </div>
+    </section>
 
     <!-- js file link -->
     <script src="./script/script.js"></script>
