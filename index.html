@@ -73,6 +73,14 @@
     <!-- Main section -->
     <main class="my-15">
         <h1 class="text-center text-4xl font-bold my-4 mb-8">Choose Your Trees</h1>
+
+
+        <!-- spinner container -->
+        <section id="spinner" class="flex justify-center mt-6 hidden">
+            <span class="loading loading-bars loading-xl"></span>
+        </section>
+
+
         <section class="flex flex-col sm:flex-row w-11/12 mx-auto space-x-4">
 
             <!-- categories section -->
@@ -92,12 +100,20 @@
             <div id="trees-card-container" class="hidden sm:w-4/6 grid sm:grid-cols-3 gap-4 space-y-4 sm:space-y-0" >
             </div>
 
+            
+            <!-- modals details -->
+            <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                <div id="modal-container" class="modal-box">
+                    
+                    
+                </div>
+            </dialog>
+
 
             <!-- your cart section -->
             <div class="sm:w-1/6 mt-4 sm:mt-0 bg-white rounded-xl">
-                <h3 class="text-xl font-bold mb-4 pt-1 p-4">Your Cart</h3>                
+                <h3 class="text-xl font-bold pt-1 p-4">Your Cart</h3>                
                 <div id="your-cart-container">
-
                 </div>
             </div>
         </section>
@@ -153,7 +169,14 @@
             <div class="bg-[#15803D] rounded-xl p-6 space-y-3 inline-block">
                 <input type="text" placeholder="Youn Name" class="input input-ghost bg-white" /> <br>
                 <input type="email" placeholder="Your Email Address" class="input input-ghost bg-white" /> <br>
-                <input type="email" placeholder="Number of Trees" class="input input-ghost bg-white " />
+                <form class="max-w-sm mx-auto">
+                    <select id="countries" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+                        <option selected>Number of Trees</option>
+                        <option value="US">1 Tree -$5</option>
+                        <option value="CA">15 Tree -$25</option>
+                        <option value="FR">10 Tree -$50</option>
+                    </select>
+                </form>
                 <button class="btn bg-[#FACC15] text-[#15803D] rounded-4xl border-none w-full">Donate Now</button>
             </div>
         </div>
